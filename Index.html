@@ -1,29 +1,40 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en" xmlns="http://www.w3.org/1999/html">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Document</title>
-    <link rel="stylesheet" type="text/css" href="index.css">
-</head>
-<body>
-<div class="header">
-    <div class="red">
-    Exceed To-Do list
+    <link rel="stylesheet" type="text/css" href="index.css" />
+  </head>
+  <body>
+    <div class="header">
+      <div class="header__items">Exceed To-Do list</div>
+      <div class="header__name"><span>Иванов И.И</span></div>
     </div>
-    <div class="green">Иванов И.И
+    <div class="search">
+      <div class="search__field">
+        <label class="search__field-label"
+          ><input class="search__field-input" type="text" placeholder="Введите название задания"
+        /></label>
+      </div>
+      <div class="search__button">
+        <div class="search__plus">
+          <svg width="12" height="12" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M7 7H1M7 1V7V1ZM7 7V13V7ZM7 7H13H7Z"
+              stroke="white"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </div>
+        <span class="search_span">Добавить задание </span>
+      </div>
     </div>
-</div>
-<div class="addask">
-    <div class="pol">
-        <input type="text">Введите название задания</input>
-    </div>
-    <div class="button">
-        <input type="button">Добавить задание</input>
-    </div>
-</div>
-
-</body>
+  </body>
 </html>
