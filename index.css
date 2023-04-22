@@ -77,12 +77,25 @@ body {
   text-align: right;
   padding: 23px 60px 24px;
 }
-
-.search {
+.content {
+  width: 100%;
+  height: 100%;
+}
+.content__wrapper {
   display: flex;
-  margin: 60px 460px 40px 460px;
-  justify-content: space-between;
+  flex-direction: column;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.content__search {
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+  margin-bottom: 40px;
   padding: 2px 3px;
+  width: 100%;
+  height: 100%;
 }
 
 .search__field {
@@ -91,7 +104,7 @@ body {
   padding: 8px 12px;
   box-sizing: border-box;
   border: 1px solid #dbe0e9;
-  width: 650px;
+  width: 791px;
   height: 40px;
   font-size: 16px;
   box-shadow: 1px 1px 4px;
@@ -110,7 +123,7 @@ body {
   border: 1px solid #1859ff;
   background: #1859ff;
   height: 40px;
-  width: 200px;
+  width: 210px;
   box-shadow: 1px 1px 4px;
   border-radius: 0px 2px 2px 0px;
 }
@@ -135,13 +148,12 @@ body {
   width: 100%;
 }
 
-.filter {
+.content__filter {
   display: flex;
-  width: 600px;
-  justify-content: flex-start;
-  align-items: center;
-  margin-right: auto;
-  margin-left: 460px;
+  justify-content: center;
+  margin-left: -273px;
+  width: 100%;
+  height: 100%;
 }
 
 .filter__button-all {
@@ -179,264 +191,45 @@ body {
   text-align: center;
   color: #606060;
 }
-.task {
+.content__task {
   display: flex;
   box-sizing: border-box;
   flex-direction: column;
   justify-content: space-between;
+  align-items: center;
   margin-top: 20px;
-  margin-left: 460px;
-  width: 785px;
+  width: 100%;
   height: auto;
-  box-shadow: 1px 1px 4px;
   border-radius: 2px;
 }
-.task__frame1 {
+.task__item {
   display: flex;
+  align-content: center;
   white-space: nowrap;
   box-sizing: border-box;
+  width: 1000px;
   height: 56px;
+  margin-bottom: 10px;
   align-items: center;
   background: #f0f2f6;
   box-shadow: 1px 1px 4px;
   border-radius: 2px 2px 0px 0px;
 }
-.task__frame1-img1 {
+.task__item-img1 {
   display: flex;
   margin-left: 16px;
 }
-.task__frame1-txt {
+.task__list {
   display: flex;
+  width: 840px;
   margin-left: 20px;
 }
-.task__frame2 {
+.task__item-img2 {
   display: flex;
-  white-space: nowrap;
-  box-sizing: border-box;
-  margin-top: 10px;
-  height: 56px;
-  align-items: center;
-  font-size: 16px;
-  box-shadow: 1px 1px 4px;
-  border-radius: 2px 2px 2px 2px;
-}
-.task__frame2-img1 {
-  display: flex;
-  margin-left: 16px;
-}
-.task__frame2-txt {
-  display: flex;
-  margin-left: 20px;
-  margin-right: 20px;
-}
-.task__frame2-img2 {
-  display: flex;
+  margin-left: 24px;
   margin-right: 16px;
 }
-.task__frame2-img3 {
-  display: flex;
-  margin-right: 16px;
-}
-.task__frame3 {
-  display: flex;
-  white-space: nowrap;
-  margin-top: 10px;
-  box-sizing: border-box;
-  width: 785px;
-  height: 56px;
-  align-items: center;
-  font-size: 16px;
-  box-shadow: 1px 1px 4px;
-  border-radius: 2px 2px 2px 2px;
-  border: 1px solid red;
-}
-.task__frame3-img1 {
-  display: flex;
-  margin-left: 16px;
-}
-.task__frame3-txt {
-  display: flex;
-  margin-left: 20px;
-  margin-right: 20px;
-}
-.task__frame3-img2 {
-  display: flex;
-  margin-right: 16px;
-}
-.task__frame3-img3 {
-  display: flex;
-}
-.task__frame4 {
-  display: flex;
-  white-space: nowrap;
-  box-sizing: border-box;
-  margin-top: 10px;
-  width: 785px;
-  height: 56px;
-  align-items: center;
-  font-size: 16px;
-  box-shadow: 1px 1px 4px;
-  border-radius: 2px 2px 2px 2px;
-}
-.task__frame4-img1 {
-  display: flex;
-  margin-left: 16px;
-}
-.task__frame4-txt {
-  display: flex;
-  margin-left: 20px;
-  margin-right: 20px;
-}
-.task__frame4-img2 {
-  display: flex;
-  margin-right: 16px;
-}
-.task__frame4-img3 {
-  display: flex;
-  margin-right: 16px;
-}
-.task__frame5 {
-  display: flex;
-  white-space: nowrap;
-  box-sizing: border-box;
-  margin-top: 10px;
-  width: 785px;
-  height: 56px;
-  align-items: center;
-  font-size: 16px;
-  box-shadow: 1px 1px 4px;
-  border-radius: 2px 2px 2px 2px;
-}
-.task__frame5-img1 {
-  display: flex;
-  margin-left: 16px;
-}
-.task__frame5-txt {
-  display: flex;
-  margin-left: 20px;
-  margin-right: 20px;
-}
-.task__frame5-img2 {
-  display: flex;
-  margin-right: 16px;
-}
-.task__frame5-img3 {
-  display: flex;
-  margin-right: 16px;
-}
-.task__frame6 {
-  display: flex;
-  white-space: nowrap;
-  box-sizing: border-box;
-  margin-top: 10px;
-  width: 785px;
-  height: 56px;
-  align-items: center;
-  font-size: 16px;
-  box-shadow: 1px 1px 4px;
-  border-radius: 2px 2px 2px 2px;
-}
-.task__frame6-img1 {
-  display: flex;
-  margin-left: 16px;
-}
-.task__frame6-txt {
-  display: flex;
-  margin-left: 20px;
-  margin-right: 20px;
-}
-.task__frame6-img2 {
-  display: flex;
-  margin-right: 16px;
-}
-.task__frame6-img3 {
-  display: flex;
-  margin-right: 16px;
-}
-.task__frame7 {
-  display: flex;
-  white-space: nowrap;
-  box-sizing: border-box;
-  margin-top: 10px;
-  width: 785px;
-  height: 56px;
-  align-items: center;
-  font-size: 16px;
-  box-shadow: 1px 1px 4px;
-  border-radius: 2px 2px 2px 2px;
-}
-.task__frame7-img1 {
-  display: flex;
-  margin-left: 16px;
-}
-.task__frame7-txt {
-  display: flex;
-  margin-left: 20px;
-  margin-right: 20px;
-}
-.task__frame7-img2 {
-  display: flex;
-  margin-right: 16px;
-}
-.task__frame7-img3 {
-  display: flex;
-  margin-right: 16px;
-}
-.task__frame8 {
-  display: flex;
-  white-space: nowrap;
-  box-sizing: border-box;
-  margin-top: 10px;
-  width: 785px;
-  height: 56px;
-  align-items: center;
-  font-size: 16px;
-  box-shadow: 1px 1px 4px;
-  border-radius: 2px 2px 2px 2px;
-}
-.task__frame8-img1 {
-  display: flex;
-  margin-left: 16px;
-}
-.task__frame8-txt {
-  display: flex;
-  margin-left: 20px;
-  margin-right: 20px;
-}
-.task__frame8-img2 {
-  display: flex;
-  margin-right: 16px;
-}
-.task__frame8-img3 {
-  display: flex;
-  margin-right: 16px;
-}
-.task__frame9 {
-  display: flex;
-  white-space: nowrap;
-  box-sizing: border-box;
-  margin-top: 10px;
-  width: 785px;
-  height: 56px;
-  align-items: center;
-  font-size: 16px;
-  box-shadow: 1px 1px 4px;
-  border-radius: 2px 2px 2px 2px;
-}
-.task__frame9-img1 {
-  display: flex;
-  margin-left: 16px;
-}
-.task__frame9-txt {
-  display: flex;
-  margin-left: 20px;
-  margin-right: 20px;
-}
-.task__frame9-img2 {
-  display: flex;
-  margin-right: 16px;
-}
-.task__frame9-img3 {
+.task__item-img3 {
   display: flex;
   margin-right: 16px;
 }
