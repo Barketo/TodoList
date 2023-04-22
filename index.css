@@ -86,6 +86,8 @@ body {
   flex-direction: column;
   min-width: 100%;
   min-height: 100%;
+  margin-bottom: -70px;
+  padding-bottom: 70px;
 }
 
 .content__search {
@@ -232,4 +234,14 @@ body {
 .task__item-img3 {
   display: flex;
   margin-right: 16px;
+}
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70px;
+  background: #f0f0f0;
+  color: #606060;
+  position: sticky;
+  bottom: 0;
 }
