@@ -204,6 +204,30 @@ body {
   height: auto;
   border-radius: 2px;
 }
+.task__itemfirst {
+  display: flex;
+  align-content: center;
+  white-space: nowrap;
+  box-sizing: border-box;
+  width: 1000px;
+  height: 56px;
+  margin-bottom: 10px;
+  align-items: center;
+  box-shadow: 1px 1px 4px;
+  border-radius: 2px 2px 0px 0px;
+}
+.task__itemfirst:hover {
+  display: flex;
+  align-content: center;
+  box-sizing: border-box;
+  width: 1000px;
+  height: 56px;
+  margin-bottom: 10px;
+  align-items: center;
+  background: #f0f2f6;
+  box-shadow: 1px 1px 4px;
+  border-radius: 2px 2px 0px 0px;
+}
 .task__item {
   display: flex;
   align-content: center;
@@ -213,7 +237,6 @@ body {
   height: 56px;
   margin-bottom: 10px;
   align-items: center;
-  background: #f0f2f6;
   box-shadow: 1px 1px 4px;
   border-radius: 2px 2px 0px 0px;
 }
