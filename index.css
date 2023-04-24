@@ -64,6 +64,7 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  cursor: default;
 }
 
 .header__items {
@@ -81,13 +82,17 @@ body {
   width: 100%;
   height: 100%;
 }
+.content__container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
 .content__wrapper {
   display: flex;
   flex-direction: column;
   min-width: 100%;
   min-height: 100%;
-  margin-bottom: -70px;
-  padding-bottom: 70px;
 }
 
 .content__search {
@@ -106,17 +111,18 @@ body {
   padding: 8px 12px;
   box-sizing: border-box;
   border: 1px solid #dbe0e9;
-  width: 791px;
+  width: 79%;
   height: 40px;
   font-size: 16px;
   box-shadow: 1px 1px 4px;
   border-radius: 2px 0px 0px 2px;
 }
-
-.search__field-input {
-  width: 500px;
+.search__field-label {
+  width: 100%;
 }
-
+.search__field-input {
+  width: 100%;
+}
 .search__button {
   display: flex;
   align-items: center;
@@ -125,17 +131,21 @@ body {
   border: 1px solid #1859ff;
   background: #1859ff;
   height: 40px;
-  width: 210px;
+  width: 21%;
   box-shadow: 1px 1px 4px;
   border-radius: 0px 2px 2px 0px;
+  cursor: pointer;
+}
+.search__button:hover {
+  background: #1859dd;
 }
 
 .search__span {
   display: flex;
   white-space: nowrap;
+  width: 100%;
   padding: 5px 1px 0px 1px;
-  margin-right: 50px;
-  margin-left: 5px;
+  margin: 8px 40px 8px 0px;
   height: 40px;
   font-size: 16px;
   color: white;
@@ -144,64 +154,40 @@ body {
 .search__plus {
   display: inline-block;
   padding: 5px;
-  margin-left: 15px;
-  margin-right: 5px;
+  margin: 14px 14px 14px 22px;
   height: 100%;
   width: 100%;
 }
 
 .content__filter {
   display: flex;
-  justify-content: center;
-  margin-left: -273px;
+  justify-content: flex-start;
   width: 100%;
   height: 100%;
 }
 
-.filter__button-all {
+.filter__button {
   border: 1px solid #dbe0e9;
   box-shadow: 1px 1px 4px;
-  padding-left: 5px;
-  padding-right: 5px;
+  padding: 0px 5px;
   border-radius: 2px 2px 2px 2px;
   margin-right: 20px;
   font-family: Inter;
   text-align: center;
+  cursor: pointer;
   color: #606060;
 }
-
-.filter__button-activ {
-  border: 1px solid #dbe0e9;
-  box-shadow: 1px 1px 4px;
-  border-radius: 2px 2px 2px 2px;
-  padding-left: 5px;
-  padding-right: 5px;
-  margin-right: 20px;
-  font-family: Inter;
-  text-align: center;
-  color: #606060;
-}
-
-.filter__button-complite {
-  border: 1px solid #dbe0e9;
-  box-shadow: 1px 1px 4px;
-  border-radius: 2px 2px 2px 2px;
-  padding-left: 5px;
-  padding-right: 5px;
-  margin-right: 20px;
-  font-family: Inter;
-  text-align: center;
-  color: #606060;
+.filter__button:hover {
+  border: 1px solid #1859ff;
+  color: #1859ff;
 }
 .content__task {
   display: flex;
-  box-sizing: border-box;
   flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: flex-start;
   margin-top: 20px;
   width: 100%;
-  height: auto;
+  height: 100%;
   border-radius: 2px;
 }
 .task__itemfirst {
@@ -209,49 +195,58 @@ body {
   align-content: center;
   white-space: nowrap;
   box-sizing: border-box;
-  width: 1000px;
+  width: 100%;
   height: 56px;
   margin-bottom: 10px;
   align-items: center;
   box-shadow: 1px 1px 4px;
   border-radius: 2px 2px 0px 0px;
+  cursor: pointer;
 }
 .task__itemfirst:hover {
   display: flex;
   align-content: center;
+  white-space: nowrap;
   box-sizing: border-box;
-  width: 1000px;
+  width: 100%;
   height: 56px;
   margin-bottom: 10px;
   align-items: center;
-  background: #f0f2f6;
   box-shadow: 1px 1px 4px;
   border-radius: 2px 2px 0px 0px;
+  background: #f0f2f6;
 }
 .task__item {
   display: flex;
   align-content: center;
   white-space: nowrap;
   box-sizing: border-box;
-  width: 1000px;
+  width: 100%;
   height: 56px;
   margin-bottom: 10px;
   align-items: center;
   box-shadow: 1px 1px 4px;
   border-radius: 2px 2px 0px 0px;
+  cursor: pointer;
+  overflow: hidden;
 }
+.task__item:hover {
+  background: #f0f2f6;
+}
+
 .task__item-img1 {
   display: flex;
   margin-left: 16px;
+  scale: 1.2;
 }
 .task__list {
   display: flex;
-  width: 840px;
+  width: 100%;
   margin-left: 20px;
 }
 .task__item-img2 {
   display: flex;
-  margin-left: 24px;
+  justify-content: flex-end;
   margin-right: 16px;
 }
 .task__item-img3 {
@@ -265,6 +260,9 @@ body {
   height: 70px;
   background: #f0f0f0;
   color: #606060;
-  position: sticky;
+  position: fixed;
   bottom: 0;
+  left: 0;
+  width: 100%;
+  cursor: default;
 }
